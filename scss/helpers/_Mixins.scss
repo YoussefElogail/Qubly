@@ -1,0 +1,41 @@
+// import color file
+@use "../variables/color" as * ;
+// borderR mixin => Makes edges 24px for the element
+@mixin title-purple {
+  width: fit-content;
+  background-color: $color2;
+  color: $color1;
+  border-radius: 20px;
+}
+
+//   1- point == mobile : at width = 767px will be styling for mobile
+//   2- point == small  : start width in 768px to 991px will be styling for viewport bigger than mobile <= 767px
+//   3- point == medium : start width in 992px to 1199px will be styling for labtop
+//   4- point == large  : at width = 1200px will be styling for pc monitor
+
+//   to use mixin breakpoints =>  You must use
+//   @include breakpoints(You must type one of the values ​​I mentioned above)
+//   and use your styling for all width
+
+@mixin break-points($point) {
+  @if ($point == mobile) {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if ($point == medium) {
+    @media (min-width: 767px) {
+      @content;
+    }
+  }
+}
+// disply flex (row)
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+// disply flex (column)
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
