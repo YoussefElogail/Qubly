@@ -1,5 +1,7 @@
   <h1 style="text-align: center;">Qubly</h1>
   <img style="width: 100%;" src="https://youssef-elogail.firebaseapp.com/imgs/img_site/3.png" />
+  <a href="https://rainbow-fudge-0bdf38.netlify.app/" target="_blank" rel="noopener noreferrer">Live   
+   preview</a>
   <br>
   <h2>Using:</h2>
   <ul style="list-style: none;">
